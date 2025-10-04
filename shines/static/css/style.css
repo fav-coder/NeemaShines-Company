@@ -1,0 +1,231 @@
+.navbar .book-btn {
+  background: #4a6cf7; /* modern blue */
+  color: white;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(74, 108, 247, 0.25);
+  transition: all 0.3s ease;
+}
+
+.navbar .book-btn:hover {
+  background: #3558e5;
+  box-shadow: 0 6px 20px rgba(74, 108, 247, 0.35);
+  transform: translateY(-2px);
+}
+body { background: pink; }
+
+.navbar {
+  background-color: #f8f9fa !important; /* light gray */
+}
+
+.hero-section {
+  background: linear-gradient(to right, #4a6cf7, #6a8bff);
+}
+
+
+html,nav-color {
+  background-color: #ffffff !important; 
+}
+
+
+.service-btn {
+  background: #4a6cf7; /* modern blue */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(74, 108, 247, 0.25);
+  transition: all 0.3s ease;
+}
+
+.contact-form .container {
+  padding: 40px 20px;
+}
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.template-btn {
+  background: #4a6cf7;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(74, 108, 247, 0.25);
+  transition: all 0.3s ease;
+}
+.template-btn:hover {
+  background: #3558e5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(74, 108, 247, 0.35);
+}
+
+.contact-info {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-info i {
+  font-size: 20px;
+  color: #4a6cf7;  /* nice modern blue */
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.contact-info h5 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.contact-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+/* Contact Form Section */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* spacing between inputs */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;  /* make them aligned neatly */
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #4a6cf7;
+  box-shadow: 0 0 5px rgba(74, 108, 247, 0.2);
+}
+
+/* Button styling */
+.template-btn {
+  align-self: flex-start; /* keeps button left-aligned */
+  background: #4a6cf7;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.template-btn:hover {
+  background: #3558e5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 108, 247, 0.25);
+}
+.map-frame {
+  margin: 20px;
+  border:0;
+  border-radius: 8px;
+}
+.banner-area {
+    position: relative;
+    background: url('assets/images/banner/contact-bg.jpg') center center/cover no-repeat;
+    min-height: 250px;
+}
+
+.banner-area::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5); /* overlay for readability */
+}
+
+.banner-area .container {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-area h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.breadcrumb {
+    background: transparent;
+    padding: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "›"; /* arrow instead of slash */
+    color: #fff;
+}
+
+.breadcrumb-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #ddd;
+}
+/* Card hover effect */
+.nutrient-card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nutrient-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Main Hero Header (Contact page, etc.) */
+.hero-header {
+  background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), 
+              url("../images/cleaning\ pose.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Alternate Hero Header (for other pages if needed) */
+.hero-header-alt {
+  background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)),
+              url('../images/main-hero.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+}
+.header-area {
+  background: transparent;   /* remove solid background */
+  position: absolute;        /* place it on top of hero */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;               /* make sure it stays clickable */
+}

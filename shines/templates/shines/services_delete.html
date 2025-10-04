@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+{% block content %}
+
+<div class="container mt-5">
+  <div class="card shadow border-0">
+    <div class="card-body text-center">
+      <h3 class="fw-bold text-danger">⚠ Delete Service</h3>
+      <p>Are you sure you want to delete <strong>{{ service.name }}</strong>?</p>
+      <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Yes, Delete</button>
+        <a href="{% url 'services' %}" class="btn btn-secondary">Cancel</a>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

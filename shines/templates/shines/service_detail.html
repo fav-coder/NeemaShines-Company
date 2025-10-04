@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+{% block content %}
+
+<div class="container mt-5">
+  <div class="card shadow border-0">
+    {% if service.image %}
+      <img src="{{ service.image.url }}" class="card-img-top" alt="{{ service.name }}">
+    {% endif %}
+    <div class="card-body">
+      {% if service.icon %}
+        <i class="{{ service.icon }} fs-1 text-primary mb-3"></i>
+      {% endif %}
+      <h2 class="fw-bold">{{ service.title }}</h2>
+      <p class="text-muted">{{ service.description }}</p>
+
+      {% if service.price %}
+        <p class="fw-bold text-success">Price: ${{ service.price }}</p>
+      {% endif %}
+
+      <p><span class="badge bg-info">{{ service.category }}</span></p>
+
+      <div class="mt-4">
+        <a href="{% url 'services' %}" class="btn btn-secondary">⬅ Back to Services</a>
+        <a href="{% url 'update_service' service.id %}" class="btn btn-warning">Edit</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock content %}
