@@ -229,3 +229,137 @@ html,nav-color {
   width: 100%;
   z-index: 10;               /* make sure it stays clickable */
 }
+
+.glass-navbar {
+  background-color: rgba(46, 34, 51, 0.85) !important; /* force purple */
+  backdrop-filter: blur(6px);
+  transition: background 0.4s ease, backdrop-filter 0.4s ease;
+}
+
+.glass-navbar.scrolled {
+  background-color: rgba(46, 34, 51, 0.95) !important; /* darker purple when scrolled */
+  backdrop-filter: blur(12px);
+}
+
+
+.navbar .nav-link {
+  color: #f8f9fa !important; /* light text so it shows on dark purple */
+  margin-left: 1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #ffc107 !important; /* golden hover */
+  transform: translateY(-2px);
+}
+
+.navbar .nav-link.active {
+  color: #ffc107 !important;
+  font-weight: 600;
+}
+/* Hero Section Styling */
+.hero-section {
+  height: 90vh;
+  background: linear-gradient(rgba(46, 34, 51, 0.85), rgba(46, 34, 51, 0.85)),
+              url("../images/cleaning-bg.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .content {
+  position: relative;
+  z-index: 2;
+}
+
+/* About Section */
+.about-section h2 {
+  letter-spacing: 1px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Button Hover Effect */
+.btn-warning:hover {
+  background-color: #e0b000;
+  color: #fff;
+  transform: translateY(-2px);
+  transition: 0.3s ease;
+}
+/* Hero Section */
+.hero-section {
+  height: 90vh;
+  background: 
+    linear-gradient(rgba(46, 34, 51, 0.75), rgba(46, 34, 51, 0.75)),
+    url("../images/home-bg.jpg") center/cover no-repeat; /* your background image */
+  position: relative;
+}
+
+/* Optional: stronger blur overlay effect */
+.hero-section .overlay {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(2px);
+}
+
+/* Keep content above overlay */
+.hero-section .content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Text adjustments */
+.hero-section h1 {
+  font-size: 3rem;
+  line-height: 1.3;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+}
+.btn-outline {
+   color: rgba(46, 34, 51, 0.6) !important;
+   border-color: rgba(46, 34, 51, 0.6) !important;
+  
+
+}
+.btn-outline:hover {
+   background-color: #e0b000;
+  color: rgba(46, 34, 51, 0.6) !important;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+
+ 
+#mainNavbar {
+  position: absolute;
+  width: 100%;
+  background: rgba(46, 34, 51, 0.6);
+  backdrop-filter: blur(6px);
+}
+.btn.color {
+  background-color: rgba(46, 34, 51, 0.75) !important;
+  color: white !important;
+  border-radius: 30px;
+}
+
+.btn.color:hover {
+  color: #ffc107 !important;
+}
+.booking-btn {
+  background-color: rgba(46, 34, 51, 0.75) !important;
+  color: white !important;
+}
+.booking-btn:hover {
+  color: #ffc107 !important;
+}

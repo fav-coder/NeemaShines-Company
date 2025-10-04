@@ -1,20 +1,34 @@
 {% extends 'main.html' %}
 {% block content %}
-<div class="container " style="margin-top: 80px;">
-    <div class="container-xxl py-5 bg-dark hero-header mb-5 ">
-                <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Contact Us</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-<h3>Welcome to Neema Shines!</h3>
 
-</div>
+<!-- Hero Section -->
+<section class="hero-section position-relative d-flex align-items-center justify-content-center text-center text-white">
+  <div class="overlay"></div>
+  <div class="content container">
+    <h1 class="display-3 fw-bold mb-3 animate__animated animate__fadeInDown">
+      Bringing Shine to Every Space!
+    </h1>
+    <p class="lead mb-4 animate__animated animate__fadeInUp">
+      Professional cleaning and care services that brighten your world — one space at a time.
+    </p>
+    <a href="{% url 'services' %}" class="btn btn-warning btn-lg px-4 rounded-pill fw-semibold animate__animated animate__fadeInUp">
+      Explore Our Services
+    </a>
+  </div>
+</section>
 
-    {% endblock content %}
+
+<!-- About Section -->
+<section class="about-section py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-4 text-uppercase text-dark">Welcome to Neema Shines</h2>
+    <p class="text-muted mx-auto mb-4" style="max-width: 700px;">
+      At Neema Shines, we believe every space deserves to sparkle. Whether it’s your home, office, or workspace, our dedicated team ensures spotless results with a personal touch of excellence and care.
+    </p>
+    <a href="{% url 'contact' %}" class="btn btn-outline rounded-pill  px-4 fw-semibold">
+      Get in Touch
+    </a>
+  </div>
+</section>
+
+{% endblock content %}

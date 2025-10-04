@@ -1,41 +1,39 @@
-    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <div class="container-fluid">
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark glass-navbar sticky-top shadow-sm">
+  <div class="container">
+    <!-- Brand -->
     <a class="navbar-brand d-flex align-items-center gap-2" href="{% url 'home' %}">
       <i class="fas fa-pepper-hot text-warning" style="font-size: 1.6rem;"></i>
-      <span class="meal-logo-text text-white">NeemaShines</span>
+      <span class="meal-logo-text fw-bold text-white">NeemaShines</span>
     </a>
 
+    <!-- Toggler -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    
 
-
-
+    <!-- Menu -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav align-items-center">
         <li class="nav-item">
           <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active text-warning{% endif %}"
             href="{% url 'home' %}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if request.resolver_match.url_name == 'about' %}active text-warning{% endif %}"
+          <a class="nav-link {% if request.resolver_match.url_name == 'services' %}active text-warning{% endif %}"
             href="{% url 'services' %}">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if request.resolver_match.url_name == 'recipes' %}active text-warning{% endif %}"
+          <a class="nav-link {% if request.resolver_match.url_name == 'booking' %}active text-warning{% endif %}"
             href="{% url 'booking' %}">Booking</a>
         </li>
         <li class="nav-item">
-  <a class="nav-link {% if request.resolver_match.url_name == 'nutrientscorner' %}active text-warning{% endif %}"
-     href="{% url 'join_us' %}">Join-Us</a>
+          <a class="nav-link {% if request.resolver_match.url_name == 'join_us' %}active text-warning{% endif %}"
+            href="{% url 'join_us' %}">Join Us</a>
         </li>
-
-        
         <li class="nav-item">
           <a class="nav-link {% if request.resolver_match.url_name == 'contact' %}active text-warning{% endif %}"
-            href="{% url 'contact' %}">Contact-Us</a>
+            href="{% url 'contact' %}">Contact</a>
         </li>
       </ul>
     </div>
